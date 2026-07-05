@@ -1,0 +1,9 @@
+.env
+token.pickle
+__pycache__/
+*.pyc
+.venv/
+.git/
+.gitignore
+README.md
+docs/

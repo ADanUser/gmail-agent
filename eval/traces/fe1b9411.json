@@ -1,0 +1,55 @@
+{
+  "trace_id": "fe1b9411",
+  "trace_name": "eval_002",
+  "started_at": "2026-07-06T00:17:42.923186",
+  "finished_at": "2026-07-06T00:17:43.940570",
+  "total_latency_sec": 1.017,
+  "total_tokens": 1148,
+  "steps": 3,
+  "spans": [
+    {
+      "span_type": "llm_call",
+      "name": "",
+      "started_at": "2026-07-06T00:17:42.923314",
+      "latency_sec": 0.678,
+      "metadata": {
+        "model": "llama-3.3-70b-versatile",
+        "tokens": {
+          "prompt_tokens": 478,
+          "completion_tokens": 85,
+          "total_tokens": 563
+        }
+      }
+    },
+    {
+      "span_type": "tool_call",
+      "name": "send_email",
+      "started_at": "2026-07-06T00:17:43.601414",
+      "latency_sec": 0.0,
+      "metadata": {
+        "args": {
+          "body": "Добрый день! Ваш заказ #5678 сейчас обрабатывается. Мы приносим извинения за задержку и будем держать вас в курсе о статусе доставки. Спасибо за терпение.",
+          "subject": "Ре: Где мой заказ?",
+          "to": "client2@example.com"
+        },
+        "result": {
+          "status": "simulated_success"
+        }
+      }
+    },
+    {
+      "span_type": "llm_call",
+      "name": "",
+      "started_at": "2026-07-06T00:17:43.601454",
+      "latency_sec": 0.339,
+      "metadata": {
+        "model": "llama-3.3-70b-versatile",
+        "tokens": {
+          "prompt_tokens": 577,
+          "completion_tokens": 8,
+          "total_tokens": 585
+        }
+      }
+    }
+  ]
+}

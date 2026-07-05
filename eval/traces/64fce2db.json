@@ -1,0 +1,25 @@
+{
+  "trace_id": "64fce2db",
+  "trace_name": "eval_003",
+  "started_at": "2026-07-06T00:17:44.246802",
+  "finished_at": "2026-07-06T00:17:44.656303",
+  "total_latency_sec": 0.409,
+  "total_tokens": 528,
+  "steps": 1,
+  "spans": [
+    {
+      "span_type": "llm_call",
+      "name": "",
+      "started_at": "2026-07-06T00:17:44.246825",
+      "latency_sec": 0.409,
+      "metadata": {
+        "model": "llama-3.3-70b-versatile",
+        "tokens": {
+          "prompt_tokens": 489,
+          "completion_tokens": 39,
+          "total_tokens": 528
+        }
+      }
+    }
+  ]
+}
