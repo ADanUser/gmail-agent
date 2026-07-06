@@ -2,16 +2,16 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Системные зависимости для сборки некоторых пакетов
 RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
     && rm -rf /var/lib/apt/lists/*
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY pyproject.toml .
+COPY src/ src/
+RUN pip install --no-cache-dir -e .
 
 COPY . .
 
 ENV PYTHONUNBUFFERED=1
 
-CMD ["python", "agent.py"]
+CMD ["python", "-m", "gmail_agent.agent"]

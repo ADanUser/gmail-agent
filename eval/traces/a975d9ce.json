@@ -1,0 +1,55 @@
+{
+  "trace_id": "a975d9ce",
+  "trace_name": "eval_004",
+  "started_at": "2026-07-06T09:17:29.907979",
+  "finished_at": "2026-07-06T09:17:30.828883",
+  "total_latency_sec": 0.921,
+  "total_tokens": 1217,
+  "steps": 3,
+  "spans": [
+    {
+      "span_type": "llm_call",
+      "name": "",
+      "started_at": "2026-07-06T09:17:29.908031",
+      "latency_sec": 0.614,
+      "metadata": {
+        "model": "llama-3.3-70b-versatile",
+        "tokens": {
+          "prompt_tokens": 482,
+          "completion_tokens": 112,
+          "total_tokens": 594
+        }
+      }
+    },
+    {
+      "span_type": "tool_call",
+      "name": "send_email",
+      "started_at": "2026-07-06T09:17:30.522255",
+      "latency_sec": 0.0,
+      "metadata": {
+        "args": {
+          "body": "Уважаемый клиент, приносим извинения за проблемы с вашим заказом. Мы очень сожалеем, что ваш заказ был повреждён при доставке. Мы обязательно разберемся в этой ситуации и примем меры, чтобы подобные проблемы не повторялись в будущем. Будем держать вас в курсе наших действий.",
+          "subject": "Извинения за проблемы с заказом",
+          "to": "client3@example.com"
+        },
+        "result": {
+          "status": "simulated_success"
+        }
+      }
+    },
+    {
+      "span_type": "llm_call",
+      "name": "",
+      "started_at": "2026-07-06T09:17:30.522290",
+      "latency_sec": 0.307,
+      "metadata": {
+        "model": "llama-3.3-70b-versatile",
+        "tokens": {
+          "prompt_tokens": 607,
+          "completion_tokens": 16,
+          "total_tokens": 623
+        }
+      }
+    }
+  ]
+}

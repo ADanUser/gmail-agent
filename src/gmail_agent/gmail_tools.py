@@ -1,5 +1,5 @@
 from googleapiclient.discovery import build
-from auth import get_gmail_credentials
+from gmail_agent.auth import get_gmail_credentials
 import base64
 import email
 from email.mime.text import MIMEText

@@ -1,8 +1,8 @@
 from openai import OpenAI
 from dotenv import load_dotenv
-from gmail_tools import read_emails, send_email, get_email_by_id
-from audit import log_action
-from guardrails import validate_send_email, email_rate_limiter
+from gmail_agent.gmail_tools import read_emails, send_email, get_email_by_id
+from gmail_agent.audit import log_action
+from gmail_agent.guardrails import validate_send_email, email_rate_limiter
 import os
 import json
 

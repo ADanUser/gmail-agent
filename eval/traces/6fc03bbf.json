@@ -1,0 +1,55 @@
+{
+  "trace_id": "6fc03bbf",
+  "trace_name": "eval_001",
+  "started_at": "2026-07-06T09:17:26.945378",
+  "finished_at": "2026-07-06T09:17:28.064221",
+  "total_latency_sec": 1.119,
+  "total_tokens": 1161,
+  "steps": 3,
+  "spans": [
+    {
+      "span_type": "llm_call",
+      "name": "",
+      "started_at": "2026-07-06T09:17:26.945415",
+      "latency_sec": 0.818,
+      "metadata": {
+        "model": "llama-3.3-70b-versatile",
+        "tokens": {
+          "prompt_tokens": 485,
+          "completion_tokens": 85,
+          "total_tokens": 570
+        }
+      }
+    },
+    {
+      "span_type": "tool_call",
+      "name": "send_email",
+      "started_at": "2026-07-06T09:17:27.763227",
+      "latency_sec": 0.0,
+      "metadata": {
+        "args": {
+          "body": "Здравствуйте, спасибо за обращение. Возврат товара возможен в течение 30 дней с даты покупки. Пожалуйста, свяжитесь с нами для получения дальнейших инструкций.",
+          "subject": "Возврат заказа #1234",
+          "to": "client1@example.com"
+        },
+        "result": {
+          "status": "simulated_success"
+        }
+      }
+    },
+    {
+      "span_type": "llm_call",
+      "name": "",
+      "started_at": "2026-07-06T09:17:27.763283",
+      "latency_sec": 0.301,
+      "metadata": {
+        "model": "llama-3.3-70b-versatile",
+        "tokens": {
+          "prompt_tokens": 583,
+          "completion_tokens": 8,
+          "total_tokens": 591
+        }
+      }
+    }
+  ]
+}

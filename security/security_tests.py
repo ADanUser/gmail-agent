@@ -15,7 +15,7 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import os
 import json
-from guardrails import validate_send_email, detect_injection_in_email
+from gmail_agent.guardrails import validate_send_email, detect_injection_in_email
 
 load_dotenv()
 
@@ -320,7 +320,7 @@ if __name__ == "__main__":
     print(f"\n{'='*60}")
     print("⏱️  RATE LIMITER TEST")
     print(f"{'='*60}")
-    from guardrails import RateLimiter
+    from gmail_agent.guardrails import RateLimiter
     limiter = RateLimiter(max_calls=3, window_seconds=10)
     for i in range(5):
         result = limiter.check("send_email")
