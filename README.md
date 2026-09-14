@@ -1,4 +1,4 @@
-# Gmail Support Agent — Capstone AI Agent Project
+# Gmail Support Agent
 
 AI-агент службы поддержки с доступом к Gmail. Читает входящие письма,
 понимает контекст запроса, готовит и отправляет ответы через tool calling —

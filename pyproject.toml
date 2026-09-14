@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "gmail-agent"
 version = "0.1.0"
-description = "AI Gmail support agent — capstone project"
+description = "AI Gmail support agent"
 requires-python = ">=3.11"
 dependencies = [
     "openai==1.51.0",

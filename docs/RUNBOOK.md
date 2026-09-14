@@ -1,4 +1,4 @@
-# RUNBOOK — Capstone Gmail Support Agent
+# RUNBOOK — Gmail Support Agent
 
 Инструкция для запуска, обновления и диагностики проекта.
 
