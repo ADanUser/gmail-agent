@@ -26,7 +26,7 @@ client = OpenAI(
     max_retries=2
 )
 
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "llama-3.1-8b-instant"
 
 tools = [
     {

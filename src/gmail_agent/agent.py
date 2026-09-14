@@ -124,7 +124,7 @@ def run_agent(user_message: str, dry_run: bool = True):
     for step in range(10):
         response = client.chat.completions.create(
             # model="openrouter/free",
-            model="llama-3.3-70b-versatile",
+            model="llama-3.1-8b-instant",
             messages=messages,
             tools=tools,
             temperature=0.3,

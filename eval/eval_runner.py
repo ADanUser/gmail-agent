@@ -35,7 +35,7 @@ client = OpenAI(
     max_retries=2
 )
 
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "llama-3.1-8b-instant"
 
 # Тот же send_email tool что в agent.py, но без get_email_by_id/read_emails —
 # письмо уже дано в контексте, агенту не нужно его искать.
