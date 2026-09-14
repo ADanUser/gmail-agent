@@ -30,7 +30,7 @@ AI-агент службы поддержки с доступом к Gmail. Чи
 ## Архитектура
 
 ```
-Письмо → read_emails → get_email_by_id → LLM (Groq, llama-3.1-8b)
+Письмо → read_emails → get_email_by_id → LLM (Groq, gpt-oss-120b)
                                               │
                                     решает: нужен ли send_email?
                                               │
@@ -98,7 +98,7 @@ LLM может вызвать `send_email` даже когда условие з
 
 ## Стек
 
-Python 3.11 · OpenAI SDK (клиент) → Groq API (`llama-3.1-8b-instant`)
+Python 3.11 · OpenAI SDK (клиент) → Groq API (`openai/gpt-oss-120b`)
 · Gmail API (OAuth 2.0) · Docker · GitHub Actions
 
 ## Структура проекта

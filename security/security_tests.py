@@ -26,7 +26,7 @@ client = OpenAI(
     max_retries=2
 )
 
-MODEL = "llama-3.1-8b-instant"
+MODEL = "openai/gpt-oss-120b"
 
 tools = [
     {
